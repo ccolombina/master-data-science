@@ -1,0 +1,511 @@
+[200~sed -i 's/\$COLOR_CONNECTIONS//' ~/.zshrc~
+sed -i 's/\$COLOR_CONNECTIONS//' ~/.zshrc 
+ls
+ls Data
+mkdir Repos
+ls
+cd Repos
+ls
+git clone https://github.com/ccolombina/master-data-science.git
+ls
+cd master-data-science
+cd ..
+cd master-data-science
+ls
+emacs README.md
+git status
+git add README.md
+git status
+git config --global user.email ccolombina@yahoo.com.ar
+git config --global user.name "Cristian Colombina"
+git commit
+git push 
+git pull
+cat README.md
+git status
+git pull
+cat README.md
+git log
+whoiam
+whoami
+printenv USER
+history
+printenv
+printenv HOST
+echo Welcome to Master
+echo "Welcome to Master"
+echo My home dir is $HOME
+echo "My home dir is $HOME"
+echo 'My home dir is $HOME'
+echo "date"
+echo `date`
+echo "$date"
+echo "$(date)"
+echo $(date)
+echo "This is one" \\
+
+echo "This is one" \\
+"and this is other line"
+echo "This is one\
+\
+and this is other"
+echo "This is one\
+and this is other line"
+ONE=1
+echo $ONE
+cat /etc/os-release
+cat /home/dsc/Data/shell/Text_example.txt
+cat ~/Data
+cat ~/Data/shell/Text_example.txt
+cd Data
+cat ./shell/Text_example.txt
+cd ./
+cd ..
+cd -
+cd Documents
+ll
+cd Desktop
+cat ../
+cat ../Data/shell/Text_example.txt
+cd ..
+cd Documents
+cat ../Data/shell/Text_example.txt
+cd ..
+cd Data/shell
+cat -n Text_example.txt
+cat -n Text_example.txt Text_example.txt Text_example.txt
+pwd
+echo $PWD
+echo "$PWD"
+echo "\$PWD"
+cd
+ls
+ls -1
+ls -1 -s
+ls -1s
+ls -s1
+ls -sa
+ls -l
+ls -al .bash_logout
+ls -al Desktop
+cd
+touch file1.txt
+ll
+alias
+cd
+cd Repos
+cd master-data-science
+ls -a
+cd //
+ls
+ls -a
+ls -al1
+ls -al1S
+ls -al1t
+ls -al1Sr
+ls -al1tr
+ls -l file1.txt file1.txt
+touch file1.txt
+cd
+touch file1txt
+ls -l file1.txt
+chmod u+x file1.txt
+ls -l file1.txt
+chmd u-r,g+x,o+w file1.txt
+chmod u-r,g+x,o+w file1.txt
+ls -l
+ls -l file1.txt
+chmod o-rw file1.txt
+ls -l file1.txt
+chmod 377 file1.txt
+ls -l file1.txt
+chmod mkdir first_dir
+mkdir first_dir
+cd first_dir
+ls
+mkdir one two
+ll
+mkdir three/two/one
+mkdir -p three/two/one
+ls
+cp file2 file2_copia
+touch file2
+cp file2 file2_copia
+ll
+cp ./file2 ./three/
+ls three
+cp file2 file2_copia ./two
+ls two
+cp -r two two_copy
+ll
+touch file_3
+ll
+chmod 777 file_3
+ll
+ls
+mv file2 file2_copia file_3 
+cd
+cd first_dir
+rm -r one
+ll
+cd 
+rm -r first_dir
+ls
+mkdir first_dir
+ls
+cd first_dir
+touch text_file.txt
+ls
+ls -l
+chmod g+x,o+w text_file.txt
+ls -l
+mkdir sub1 sub2 text_file
+ls
+cp text_file.txt sub1
+cd sub1
+ls
+cd ..
+ls
+mv text_file.txt sub2/text_file.txt.2
+ls
+cd sub2
+ls
+cd ..
+mv -r sub1 sub3
+mv sub1 sub3
+mv sub3 sub1
+mkdir sub3
+ls
+cd sub1
+ls
+cd ..
+cp sub1 sub3
+cp -r sub1 sub3
+cd sub3
+ls
+cd ..
+mv sub2/text_file.txt.2 sub2/text_file.txt.backup
+cd sub2
+ls
+cd..
+cd ..
+mv first_dir/sub2/text_file.txt.backup first_dir/.text_file.txt.backup
+ls -a
+cd first_dir
+ls -a
+ls
+rm -r sub2
+ls
+cd ..
+cd
+cd Data/shell
+cat Finn.txt
+less Finn.txt
+less -N Finn.txt
+man bash
+which ls
+which python
+sudo which python
+whereis python
+this is the text editor
+this Is T
+cd Data/opentraveldata
+ls
+ll
+ls -1
+ll
+cat optd_aircraft.csv
+head optd_aircraft.csv
+head -5 optd_aircraft.csv
+head -n 5 optd_aircraft.csv
+head -n -5 optd_aircraft.csv
+head -n -450 optd_aircraft.csv
+head -5 optd_aircraft.csv optd_airlines.csv
+tail optd_aircraft.csv
+tail -4optd_aircraft.csv
+tail -4 optd_aircraft.csv
+tail -n -4 optd_aircraft.csv
+tail -n +4 optd_aircraft.csv
+cd ..
+cd shell
+echo "Hello"
+echo "Hello" > file_hello.txt
+cat file_hello.txt
+echo "Hello" > file_hello.txt
+cat file_hello.txt
+echo "Hello" >> file_hello.txt
+cat file_hello.txt
+cat -n
+cat -n Text_example.txt
+cat -n Text_example.txt | head -5
+<Text_example.txt head -5
+<Text_example.txt| head -5
+wc Text_example.txt
+head -5 Text_example.txt | wc
+wc -w Text_example.txt
+head -5 Finn.txt|wc
+head -5 Finn.txt|wc -w
+cd ..
+cd us_dot/otp
+ls -ls
+ls -ls1
+ll
+cd
+cd Data/opentraveldata
+ls -ls
+ls -l -S
+ls -l -S|head -4|tail -3
+ls -l -S|head -4|tail -3 > three_largest_file.txt
+cd..
+cd ..
+cd opentraveldata
+ls
+cd
+cd Data
+find
+cd
+find . -name "text_file"
+find . -name "text_file*"
+find . -name
+find . -name "text_file*" -maxdepth 5
+find . -type f -mmin -60
+find . -mmin -60
+find . -mtime -1
+find . -iname "text_file*" -type f
+find . -iname "text_file*" -type f -exec echo "FOUND" \;
+find . -iname "text_file*" -type f -exec ls -l {} \;
+find . -iname "text_file*" -type f -exec ls -l {} \; -exec LS -S {}\;
+find . -iname "text_file*" -type f -exec ls -l {} \; -exec LS -S {} \;
+bash
+echo $0
+cd Repos
+sh
+find . -iname "text_file*" -type f -exec ls -l {} \; -exec zsh -c "ls -l {}|wc " \;
+find . -iname "text_file*" -type f -exec zsh -c "ls -l {}|wc " \;
+find . -iname "text_file*" -type f -exec zsh -c "ls -l {}|wc " \; -exec echo FOUND \;
+CD
+cd
+find . -mindepth 1 -type f -mmin -60
+find . -maxdepth 1 -empty !=perm 777
+find . -maxdepth 1 -empty ! =perm 777
+find . -mindepth 1 -type f -empty ! =perm 777
+cd
+cat .history
+whoami
+printenv USER
+printenv
+printenv HOST
+echo $HOST
+echo Welcome to Master
+echo "World\
+is mine"
+echo World\\
+iss mine
+echo "World"\\
+"is mine"
+'My home directory is $HOME'
+"My home directory is $HOME"
+`My home directory is $HOME`
+ECHO "DATE"
+echo "date"
+echo 'date'
+echo `date`
+echo '$(date)'
+echo $(date)
+cat etc/os-release
+cat /etc/os-release
+cd Data/shell
+cat Text_example.txt
+cat -n Text_example.txt
+cat -2 Text_example.txt
+cd ..
+cat Data/shell/Text_example.txt
+cd Data
+cd opentraveldata
+cat ../shell
+cat ../shell/Text_example.txt
+cat /home/dsc/Data/shell/Text_example.txt
+cat ~/Data/shell
+cat ~/Data/shell/Text_example.txt
+pwd
+echo $PWD
+cd
+echo \$PWD
+cd /
+cd./
+cd ./
+cd ../
+cd /Data/
+cd etc
+cd /Data/
+cd ../
+cd -
+ls
+cd ..
+ls
+ls -1
+ls -s
+ls -1s
+ls -s1
+ls -lH
+ls -l
+ls -a
+ls -l
+ls -a
+ls -la
+la -l .zshrc
+ls -S
+ls -Sl1s
+ls -Sl1sa
+ls -Sl1sar
+ls -Sl1sart
+ls -l1art
+ls -t
+ls -t1
+ls -lt1
+ls -lX1
+ls -lX1 --reverse
+ls -l
+ls -ln
+chmod u+r,g+wx file_name
+cd
+touch file_name
+ls -l
+chmod u+x,o+wx file_name
+ls -l
+chmod u+x, o+wx file_name
+chmod uo-r,g+xw file_name
+ls -l
+mkdir one
+ls -l
+mkdir one/two/three
+mkdir one/two/three/
+cd
+mkdir one/two/three/
+mkdir -p one/two/three/
+ls -l
+cd one/two/three
+cd
+cp -r source?dir destination?dir
+cp -r source_dir destination_dir
+mkdir source_dir
+ls -l
+cp -r source_dir destination_dir
+ls -l
+cp source_dir destination_dir
+cp souce_file destination_file
+touch souce_file
+ls -l
+cp souce_file destination_file
+ls -l
+cp -p souce_file destination_file
+ls -l
+cp -i file_1 file_2 destination_dir
+touch file_1
+touch file_2
+ls -l
+cp -i file_1 file_2 destination_dir
+ls -l
+cd destination_dir
+ls -l
+cd
+mkdir first_dir1
+ls -l
+touch text_file.txt /home/dsc/first_dir1
+cd first_dir1
+ls
+ls -l
+cd
+ls -l
+mv text_file.txt ~/first_dir1
+ls -l
+/home/dsc/first_dir1
+cd /home/dsc/first_dir1
+ls -l
+cd
+ls -l
+find text_file.txt
+cd
+cd first_dir1
+touch text_file.txt
+ls -l
+chmod u+x,o+w text_file.txt
+ls -l
+chmod g+x,o+w text_file.txt
+ls -l
+mkdir -p ./one/two/three/
+ls -l
+cat one
+ls -l
+cd /one
+cd one
+cd two
+cd three
+cd
+cp /home/dsc/first_dir1/text_file.txt ./first_dir1/one
+cd first_dir1
+ls -l
+cd one
+ls -l
+cp ./text_file.txt ~/first_dir1/one/two/ text_file.txt.2
+cp ./text_file.txt ~/first_dir1/one/two text_file.txt.2
+mv ./text_file.txt ~/first_dir1/one/two text_file.txt.2
+mv ./text_file.txt ~/first_dir1/one/two/ text_file.txt.2
+mv text_file.txt.2 ./text_file.txt ~/first_dir1/one/two
+mv text_file.txt.2 text_file.txt
+mv ~/text_file.txt.2 text_file.txt
+mv ~dsc
+cd
+mv first_dir1/one/two/text_file.txt.2 first_dir1/text_file.txt
+mv first_dir1/text_file.txt first_dir1/one/two/text_file.txt.2
+cd first_dir1
+cd one
+cd two
+ls -l
+cd ..
+ls -l
+mv one/two/three one
+ls -l
+cd one
+cd two
+ls -l
+cd..
+cd ..
+ls -l
+cd
+mv ./first_dir1/one/two/text_file.txt.2 first_dir1/one/two/text_file.txt.backup
+cd first_dir1/one/two
+ls -l
+mv first_dir1/one/two/text_file.txt.backup ~/first_dir1/.text_file.txt.backup
+mv first_dir1/one/two/text_file.txt.backup /first_dir1/.text_file.txt.backup
+cd
+mv first_dir1/one/two/text_file.txt.backup /first_dir1/.text_file.txt.backup
+cd first_dir1/one/two
+ls -l
+mv first_dir1/one/two/text_file.txt.backup ./first_dir1/text_file.txt.backup
+cd
+rm first_dir1/one/two
+rm -rfirst_dir1/one/two
+rm -r first_dir1/one/two
+git clone https://github.com/ccolombina/master-data-science.git
+.history
+ls -l
+cd Repos
+ls -l
+cd master-data-science
+cd
+ls -l
+cd master-data-science
+ls -l
+cd..
+cd
+rm master-data-science
+rm -r master-data-science
+ls -la
+cat .history
+cd Repos/master-data-science
+touch apuntes_clase_ds
+ls -l
+cp ~dsc
+cp /home/dsc/Downloads/.history ./apuntes_clase_ds
+cp /home/dsc/.history ./apuntes_clase_ds
